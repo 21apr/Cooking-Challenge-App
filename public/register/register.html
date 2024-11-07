@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Instagram</title>
     <script src="./dist/register.js" defer></script>
+    <link rel="stylesheet" href="./../dist/style.css">
 </head>
 <body>
-    <form onsubmit="handleRegister(event)">
+    <form class="login-register" onsubmit="handleRegister(event)">
+        <h1>Register</h1>
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="email" required>
         <input type="password" name="password" placeholder="password" required>
         <button type="submit">Register</button>
+        <a href="./../login/login.html">Login</a>
     </form>
-    <a href="./../login/login.html">Login</a>
 </body>
 </html>

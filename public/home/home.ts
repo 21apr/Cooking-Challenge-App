@@ -31,21 +31,18 @@ function helloUser(userName:string, element:HTMLElement|null){
 
 async function getRecipes(){
     try {
-      
         const response = await fetch('/recipes/get-recipes');
         const jsonResponse = await response.json();
-
+        console.log(jsonResponse);
       
-        if(jsonResponse.pets){
-            renderRecipes(jsonResponse.pets);
+        if(jsonResponse.recipes){
+            renderRecipes(jsonResponse.recipes);
         }
       
     } catch (error) {
         console.error(error);
     }
 }
-
-
 
 getRecipes();
 

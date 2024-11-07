@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Login</title>
+    <title>Login</title>
     <script src="./dist/login.js" defer></script>
+    <link rel="stylesheet" href="./../dist/style.css">
 </head>
 <body>
-    <h1>Login to Instagram</h1>
-    <form onsubmit="handleLogin(event)">
+    <form class="login-register" onsubmit="handleLogin(event)">
+        <h1>Login</h1>
         <input type="email" name="email" placeholder="email" required>
         <input type="password" name="password" placeholder="password" required>
         <button type="submit">Login</button>
